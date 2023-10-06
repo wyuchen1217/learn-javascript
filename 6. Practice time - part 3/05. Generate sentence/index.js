@@ -9,5 +9,17 @@
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let baseString = `The ${arr.length} ${desc} are`;
+    const lastIndex = arr.length-1;
+    for (let i = 0; i < arrLength-1; i++) {
+        if( i === lastIndex){
+            baseString += arr[i];
+        }else{
+            baseString += arr[i] + ",";
+        }
+        
+    }
 }
+
+const sentence = generateSentence("largest countries", ["China", "India", "USA"]);
+console.log(sentence); // Should display "The 3 largest countries are China, India, USA"

@@ -7,6 +7,10 @@ const ulEl = document.getElementById("ul-el")
 // 2. Refresh the page. Get the value and log it to the console
 // 3. Clear localStorage
 
+localStorage.setItem("myWebsite", "https://www.linkedin.com/in/yuchen-wang-257900197/")
+console.log(localStorage.getItem("myWebsite"))
+localStorage.clear()
+
 // HINTS:
 // localStorage.setItem(key, value)
 // localStorage.getItem(key)

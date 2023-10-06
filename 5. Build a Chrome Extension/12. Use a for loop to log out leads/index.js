@@ -1,4 +1,4 @@
-let myLeads = []
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 
@@ -12,3 +12,6 @@ inputBtn.addEventListener("click", function() {
 
 
 
+for(let i = 0; i< inputEl.clientHeight; i++){
+    console.log(myLeads[i])
+}
